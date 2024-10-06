@@ -1,0 +1,16 @@
+<html>
+
+    <h1>Register now!</h1>
+
+    <form method="POST" autocomplete="off">
+
+        <!-- for every post request on django, we must have csrf token -->
+         {% csrf_token %}
+
+        {{registerform.as_p}} <!-- as_p for styling -->
+
+        <input type="submit" value="Register"/>
+
+    </form>
+
+</html>
