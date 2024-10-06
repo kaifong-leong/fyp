@@ -25,7 +25,7 @@ def homepage(request):
                     print(f"Script Output: {result.stdout}")
                     result_df = pd.read_csv("results.csv")
                     value = result_df.loc[result_df['id'] == 'TLS1', 'finding'].values[0]
-                    if not value.empty:
+                    if not len(value) == 0:
                         print(f"The value is {value}")
                     else:
                         print("No matching value found")
