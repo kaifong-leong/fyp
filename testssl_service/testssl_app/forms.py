@@ -4,4 +4,5 @@ from .models import URLItem
 class URLForm(forms.ModelForm):
     class Meta:
         model = URLItem
-        fields = "__all__"
+        # fields = "__all__"
+        fields = ['url']

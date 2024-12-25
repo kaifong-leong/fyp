@@ -1,0 +1,8 @@
+#Building the container
+
+sudo docker build -t mytestssl .
+
+#Storing the results in a path specified. The results are originally being temporarily stored within the container in /home/testssl/results, then it is being copied to the local directory specified during runtime.
+
+sudo docker run --rm -t -v </path/to/local/results>:/home/testssl/results mytestssl 163.53.76.86 52.95.120.67
+

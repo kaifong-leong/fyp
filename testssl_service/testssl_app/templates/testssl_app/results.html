@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="col-md-12">
+    <h2>Results for URL: {{ instance.url }}</h2>
+    <p>Submitted on: {{ instance.date }}</p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Protocol</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>SSLv2</td><td>{{ instance.value_sslv2 }}</td></tr>
+            <tr><td>SSLv3</td><td>{{ instance.value_sslv3 }}</td></tr>
+            <tr><td>TLS 1.0</td><td>{{ instance.value_tls1 }}</td></tr>
+            <tr><td>TLS 1.1</td><td>{{ instance.value_tls11 }}</td></tr>
+            <tr><td>TLS 1.2</td><td>{{ instance.value_tls12 }}</td></tr>
+            <tr><td>TLS 1.3</td><td>{{ instance.value_tls13 }}</td></tr>
+        </tbody>
+    </table>
+    <a href="{% url 'home' %}" class="btn btn-primary">Go Back</a>
+</div>
+{% endblock %}
