@@ -1,0 +1,85 @@
+{
+    "name": "NIST Cybersecurity Policy",
+    "description": "This policy is based on the National Institute of Standards and Technology (NIST) Cybersecurity Framework, which provides guidelines for improving cybersecurity risk management and resilience. The policy focuses on secure TLS configurations to protect data in transit and prevent unauthorized access.",
+    "rules": [
+        {
+            "name": "TLS VERSION FOR CONNECTION",
+            "code": "R01",
+            "description": "Checking the TLS Version Used for the Connection",
+            "connection_type": "TLS_CONNECTION",
+            "connection_field": "TLS_CONNECTION_VERSION"
+        }
+    ],
+    "policy_rules": [
+        {
+            "code": "PR01",
+            "rule": "R01",
+            "sub_rules": ["SR02", "SR03", "SR04", "SR05"],
+            "violation_data": {
+                "HIGH": {
+                    "title": "Outdated and Insecure Protocols",
+                    "description": "SSL v2 and SSL v3 are deprecated and considered highly insecure due to numerous vulnerabilities, including lack of proper encryption and susceptibility to attacks like POODLE. Connections using these protocols risk exposing sensitive data and enabling unauthorized access."
+                },
+                "MEDIUM": {
+                    "title": "Legacy Protocols with Weak Security",
+                    "description": "TLS v1.0 and TLS v1.1 are outdated and no longer considered secure by modern standards. These protocols lack support for strong encryption algorithms and are vulnerable to attacks such as BEAST and downgrade attacks. Migration to TLS v1.2 or higher is strongly recommended."
+                },
+                "LOW": {
+                    "title": "Improved but Aging Protocol",
+                    "description": "While TLS v1.2 is widely used and more secure than older protocols, it lacks the advanced security features of TLS v1.3, such as faster handshakes and stronger default cipher suites. For enhanced security, upgrading to TLS v1.3 is recommended where possible."
+                }
+            },
+            "consequence": "Non-compliance with secure TLS version requirements exposes connections to potential interception, data breaches, and unauthorized access due to known vulnerabilities in outdated protocols.",
+            "explanation": "Older TLS versions (SSL v2/v3, TLS 1.0/1.1) lack adequate security measures and are vulnerable to attacks such as POODLE, BEAST, and downgrade attacks, putting encrypted communications at significant risk.",
+            "remediation": "Upgrade all systems to support TLS v1.2 or higher, with a preference for TLS v1.3, and disable all outdated protocols to ensure secure and compliant communication."
+        }
+    ],
+
+        "sub_rules": [
+            {
+                "code": "SR02",  
+                "label": "SHALL",
+                "sub_rule_values": ["SRV02"],
+                "rule": "R01"
+            }, 
+            {
+                "code": "SR03",  
+                "label": "SHOULD",
+                "sub_rule_values": ["SRV03"],
+                "rule": "R01"
+            }, 
+            {
+                "code": "SR04",  
+                "label": "SHOULD_NOT",
+                "sub_rule_values": ["SRV04"],
+                "rule": "R01"
+            }, 
+            {
+                "code": "SR05",  
+                "label": "SHALL_NOT",
+                "sub_rule_values": ["SRV05"],
+                "rule": "R01"
+            }],
+
+        "sub_rule_values": [
+            {
+                "code": "SRV02",
+                "connection_field": "TLS_CONNECTION_VERSION",
+                "value": [13]
+            }, 
+            {
+                "code": "SRV03",
+                "connection_field": "TLS_CONNECTION_VERSION",
+                "value": [12]
+            }, 
+            {
+                "code": "SRV04",
+                "connection_field": "TLS_CONNECTION_VERSION",
+                "value": [10, 11]
+            }, 
+            {
+                "code": "SRV05",
+                "connection_field": "TLS_CONNECTION_VERSION",
+                "value": [20, 30]
+            }]
+}
