@@ -15,21 +15,24 @@ def main():
     for rule in RULES:
         define_rule = input(f"Would you like to define {rule['rule_name']}? (yes/no): ").strip().lower()
         if define_rule == "yes":
-            rule_sr_list, rule_srv_list, rule_pr_sr_list, next_index = handle_rule(
-                rule_name=rule["rule_name"],
-                rule_code=rule["rule_code"],
-                description=rule["description"],
-                connection_type=rule["connection_type"],
-                connection_field=rule["connection_field"],
-                possible_values=rule["possible_values"],
-                word_mapping=WORD_MAPPING,
-                categories=CATEGORIES,
-                starting_index=next_index
-            )
-            r_list.append(rule)
-            sr_list.extend(rule_sr_list)
-            srv_list.extend(rule_srv_list)
-            pr_sr_list.append({"rule_code": rule["rule_code"], "sub_rules": rule_pr_sr_list, "violation_data": rule["violation_data"], "consequence": rule["consequence"], "explanation": rule["explanation"], "remediation": rule["remediation"]})
+            if rule['special_handling'] == "yes":
+                pass
+            else:
+                rule_sr_list, rule_srv_list, rule_pr_sr_list, next_index = handle_rule(
+                    rule_name=rule["rule_name"],
+                    rule_code=rule["rule_code"],
+                    description=rule["description"],
+                    connection_type=rule["connection_type"],
+                    connection_field=rule["connection_field"],
+                    possible_values=rule["possible_values"],
+                    word_mapping=WORD_MAPPING,
+                    categories=CATEGORIES,
+                    starting_index=next_index
+                )
+                r_list.append(rule)
+                sr_list.extend(rule_sr_list)
+                srv_list.extend(rule_srv_list)
+                pr_sr_list.append({"rule_code": rule["rule_code"], "sub_rules": rule_pr_sr_list, "violation_data": rule["violation_data"], "consequence": rule["consequence"], "explanation": rule["explanation"], "remediation": rule["remediation"]})
 
     output = {
         "name": name_of_policy,
