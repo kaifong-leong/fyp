@@ -39,6 +39,15 @@ def homepage(request):
             try: 
                 # result = subprocess.run(['wsl', 'bash', script_path, '--csvfile', 'results.csv', '--overwrite', url], capture_output=True, text=True)
                 result = subprocess.run(docker_command, capture_output=True, text=True)
+                print(result.returncode)
+                if result.returncode == 1:
+                    print(f"Docker command failed with return code 1")
+                    print(f"Standard Output:\n{result.stdout}")
+                    print(f"Standard Error:\n{result.stderr}")
+
+                if result.returncode != 0:
+                    print(f"Docker command failed: {result.stderr}")
+                    return render(request, 'testssl_app/error.html', {"message": "Docker execution failed."})
 
                 if result.returncode == 0:
                     # print(f"Docker Output: {result.stdout}")
@@ -64,6 +73,10 @@ def homepage(request):
                         form_instance.value_tls13 = result_df.loc[result_df['id'] == 'TLS1_3', 'finding'].values[0]
 
                         form_instance.save()
+                        if form_instance.id is None:
+                            print("Error: form_instance not saved correctly!")
+                            return render(request, 'testssl_app/error.html', {"message": "Could not save instance."})
+
 
                         # extracted_values = {
                         #     'sslv2': form_instance.value_sslv2,
@@ -86,6 +99,9 @@ def homepage(request):
             except Exception as e:
                 print(f"Error running Docker command: {str(e)}")
 
+            if form_instance.id is None:
+                print("Error: form_instance.id is None before redirecting!")
+                return render(request, 'testssl_app/error.html', {"message": "Error saving data."})
             return redirect('results', instance_id=form_instance.id)
     form = URLForm()
 

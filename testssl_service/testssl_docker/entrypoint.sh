@@ -13,7 +13,6 @@ fi
 for ip in "$@"
 do
     echo "Running testssl.sh for IP: $ip"
-    # ../testssl.sh --std --fs --protocols --server-defaults --server-preference --htmlfile results.html --jsonfile results.json --csvfile results.csv --overwrite "$ip"
-    ../testssl.sh --protocols --htmlfile results.html --jsonfile results.json --csvfile results.csv --overwrite "$ip"
+    ../testssl.sh --protocols --jsonfile results.json --csvfile results.csv --overwrite "$ip"
 done
 
