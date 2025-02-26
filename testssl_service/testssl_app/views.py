@@ -16,14 +16,13 @@ def homepage(request):
         if form.is_valid():
             
             url = form.cleaned_data['url']
-            # form.save()
             form_instance = form.save(commit=False)  # Create instance but don't save yet
 
             # script_path = '/home/kaifong/testssl.sh/testssl.sh'
             # Define Docker paths
-            docker_image = "mytestssl"  # Name of your Docker image
+            docker_image = "oqs-testssl"  # Name of your Docker image
             results_dir_host = os.path.abspath("../testssl_service/testssl_docker/results")  # Local results directory
-            results_dir_container = "/home/testssl/results"  # Path inside the container
+            results_dir_container = "/opt/testssl.sh/results"  # Path inside the container
             results_file = "results.csv"
 
             # Ensure local results directory exists
@@ -39,44 +38,64 @@ def homepage(request):
             try: 
                 # result = subprocess.run(['wsl', 'bash', script_path, '--csvfile', 'results.csv', '--overwrite', url], capture_output=True, text=True)
                 result = subprocess.run(docker_command, capture_output=True, text=True)
-                print(result.returncode)
-                if result.returncode == 1:
-                    print(f"Docker command failed with return code 1")
+                # print(result.returncode)     
+                
+                # if Docker fails
+                if result.returncode != 0: 
+                    print(f"Docker command failed with return code {result.returncode}")
                     print(f"Standard Output:\n{result.stdout}")
                     print(f"Standard Error:\n{result.stderr}")
-
-                if result.returncode != 0:
-                    print(f"Docker command failed: {result.stderr}")
                     return render(request, 'testssl_app/error.html', {"message": "Docker execution failed."})
 
+                # if Docker does not fail
                 if result.returncode == 0:
-                    # print(f"Docker Output: {result.stdout}")
-                    print("Success!")
+                    print("Docker command succeeded")
+                    print(f"Standard Output: {result.stdout}")
+
                     # Load results CSV file
                     csv_path = os.path.join(results_dir_host, results_file)
                     if os.path.exists(csv_path):
 
                         result_df = pd.read_csv(csv_path)
 
-                        # Extract values from CSV
-                        # value_sslv2 = result_df.loc[result_df['id'] == 'SSLv2', 'finding'].values[0]
-                        # value_sslv3 = result_df.loc[result_df['id'] == 'SSLv3', 'finding'].values[0]
-                        # value_tls1 = result_df.loc[result_df['id'] == 'TLS1', 'finding'].values[0]
-                        # value_tls11 = result_df.loc[result_df['id'] == 'TLS1_1', 'finding'].values[0]
-                        # value_tls12 = result_df.loc[result_df['id'] == 'TLS1_2', 'finding'].values[0]
-                        # value_tls13 = result_df.loc[result_df['id'] == 'TLS1_3', 'finding'].values[0]
-                        form_instance.value_sslv2 = result_df.loc[result_df['id'] == 'SSLv2', 'finding'].values[0]
-                        form_instance.value_sslv3 = result_df.loc[result_df['id'] == 'SSLv3', 'finding'].values[0]
-                        form_instance.value_tls1 = result_df.loc[result_df['id'] == 'TLS1', 'finding'].values[0]
-                        form_instance.value_tls11 = result_df.loc[result_df['id'] == 'TLS1_1', 'finding'].values[0]
-                        form_instance.value_tls12 = result_df.loc[result_df['id'] == 'TLS1_2', 'finding'].values[0]
-                        form_instance.value_tls13 = result_df.loc[result_df['id'] == 'TLS1_3', 'finding'].values[0]
+                        # Mapping CSV 'id' values to form_instance attributes
+                        field_mapping = {
+                            "SSLv2": "value_sslv2",
+                            "SSLv3": "value_sslv3",
+                            "TLS1": "value_tls1",
+                            "TLS1_1": "value_tls11",
+                            "TLS1_2": "value_tls12",
+                            "TLS1_3": "value_tls13",
+                            "cipherorder_TLSv1": "tls10_ciphers",
+                            "cipherorder_TLSv1_1": "tls11_ciphers",
+                            "cipherorder_TLSv1_2": "tls12_ciphers",
+                            "supportedciphers_TLSv1_3": "tls13_ciphers",
+                            "FS_KEMs": "kems",
+                            "FS_ECDHE_curves": "ecdhe_curves",
+                            "FS_TLS12_sig_algs": "tls12_sig_alg",
+                            "FS_TLS13_sig_algs": "tls13_sig_alg",
+                            "cert_signatureAlgorithm <hostCert#1>": "cert_sig_alg",
+                            "cert <hostCert#1>": "cert"
+                        }
+                        # Loop through the mapping and set attributes dynamically
+                        for csv_id, model_field in field_mapping.items():
+                            matching_row = result_df.loc[result_df['id'] == csv_id, 'finding']
+                            if not matching_row.empty:
+                                setattr(form_instance, model_field, matching_row.values[0])  # Dynamic assignment
 
                         form_instance.save()
+
+                        # form_instance.value_sslv2 = result_df.loc[result_df['id'] == 'SSLv2', 'finding'].values[0]
+                        # form_instance.value_sslv3 = result_df.loc[result_df['id'] == 'SSLv3', 'finding'].values[0]
+                        # form_instance.value_tls1 = result_df.loc[result_df['id'] == 'TLS1', 'finding'].values[0]
+                        # form_instance.value_tls11 = result_df.loc[result_df['id'] == 'TLS1_1', 'finding'].values[0]
+                        # form_instance.value_tls12 = result_df.loc[result_df['id'] == 'TLS1_2', 'finding'].values[0]
+                        # form_instance.value_tls13 = result_df.loc[result_df['id'] == 'TLS1_3', 'finding'].values[0]
+
+                        # form_instance.save()
                         if form_instance.id is None:
                             print("Error: form_instance not saved correctly!")
                             return render(request, 'testssl_app/error.html', {"message": "Could not save instance."})
-
 
                         # extracted_values = {
                         #     'sslv2': form_instance.value_sslv2,
@@ -97,11 +116,8 @@ def homepage(request):
                 #     print(f"Docker Error: {result.stderr}")
             
             except Exception as e:
-                print(f"Error running Docker command: {str(e)}")
-
-            if form_instance.id is None:
-                print("Error: form_instance.id is None before redirecting!")
-                return render(request, 'testssl_app/error.html', {"message": "Error saving data."})
+                print(f"Error running Docker command and saving results: {str(e)}")
+            
             return redirect('results', instance_id=form_instance.id)
     form = URLForm()
 

@@ -1,0 +1,1108 @@
+[
+         {
+              "id"           : "engine_problem",
+              "ip"           : "/",
+              "port"         : "443",
+              "severity"     : "WARN",
+              "finding"      : "No engine or GOST support via engine with your ../bin/openssl.Linux.x86_64"
+          }
+,         {
+              "id"           : "service",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "HTTP"
+          }
+,         {
+              "id"           : "pre_128cipher",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No 128 cipher limit bug"
+          }
+,         {
+              "id"           : "SSLv2",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "SSLv3",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1_1",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1_2",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "TLS1_3",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered + downgraded to weaker protocol"
+          }
+,         {
+              "id"           : "NPN",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "ALPN",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipher_order-tls1_2",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "server"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc02f",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDH 256   AESGCM      128      TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc030",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDH 256   AESGCM      256      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x9c",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   x9c     AES128-GCM-SHA256                 RSA        AESGCM      128      TLS_RSA_WITH_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x9d",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   x9d     AES256-GCM-SHA384                 RSA        AESGCM      256      TLS_RSA_WITH_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "cipherorder_TLSv1_2",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384 AES128-GCM-SHA256 AES256-GCM-SHA384"
+          }
+,         {
+              "id"           : "cipher_order",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "server"
+          }
+,         {
+              "id"           : "FS",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "FS_ciphers",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "FS_ECDHE_curves",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "prime256v1"
+          }
+,         {
+              "id"           : "FS_TLS12_sig_algs",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "RSA+SHA512 RSA+SHA384 RSA+SHA256 RSA+SHA224 RSA+SHA1"
+          }
+,         {
+              "id"           : "TLS_extensions",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "'renegotiation info/#65281' 'EC point formats/#11'"
+          }
+,         {
+              "id"           : "TLS_session_ticket",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no -- no lifetime advertised"
+          }
+,         {
+              "id"           : "SSL_sessionID_support",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "yes"
+          }
+,         {
+              "id"           : "sessionresumption_ticket",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not supported"
+          }
+,         {
+              "id"           : "sessionresumption_ID",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "supported"
+          }
+,         {
+              "id"           : "TLS_timestamp",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "random"
+          }
+,         {
+              "id"           : "cert_compression",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "N/A"
+          }
+,         {
+              "id"           : "clientAuth",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "none"
+          }
+,         {
+              "id"           : "cert_numbers",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "1"
+          }
+,         {
+              "id"           : "cert_signatureAlgorithm",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "SHA256 with RSA"
+          }
+,         {
+              "id"           : "cert_keySize",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "RSA 2048 bits (exponent is 65537)"
+          }
+,         {
+              "id"           : "cert_keyUsage",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Digital Signature, Key Encipherment"
+          }
+,         {
+              "id"           : "cert_extKeyUsage",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLS Web Server Authentication, TLS Web Client Authentication"
+          }
+,         {
+              "id"           : "cert_serialNumber",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "0EDFA831692206C224148A2EAA615DCA"
+          }
+,         {
+              "id"           : "cert_serialNumberLen",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "16"
+          }
+,         {
+              "id"           : "cert_fingerprintSHA1",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "6A0E49D755482A78D29C1D37B7F563106F332057"
+          }
+,         {
+              "id"           : "cert_fingerprintSHA256",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "629C71B0744D8F32F21009CAD96D6933B14540BBFA9F4F1E2110FA404EA132C2"
+          }
+,         {
+              "id"           : "cert",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "cert_commonName",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ntulearn.ntu.edu.sg"
+          }
+,         {
+              "id"           : "cert_commonName_wo_SNI",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ntulearn.ntu.edu.sg"
+          }
+,         {
+              "id"           : "cert_subjectAltName",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ntulearn.ntu.edu.sg *.blackboard.com ntulearntst.ntu.edu.sg ntulearnstg.ntu.edu.sg ntulearnmig.ntu.edu.sg"
+          }
+,         {
+              "id"           : "cert_trust",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "Ok via SAN and CN (same w/o SNI)"
+          }
+,         {
+              "id"           : "cert_chain_of_trust",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "passed."
+          }
+,         {
+              "id"           : "cert_certificatePolicies_EV",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "cert_expirationStatus",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "137 >= 60 days"
+          }
+,         {
+              "id"           : "cert_notBefore",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2024-06-06 00:00"
+          }
+,         {
+              "id"           : "cert_notAfter",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2025-07-05 23:59"
+          }
+,         {
+              "id"           : "cert_extlifeSpan",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "certificate has no extended life time according to browser forum"
+          }
+,         {
+              "id"           : "cert_eTLS",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not present"
+          }
+,         {
+              "id"           : "cert_crlDistributionPoints",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "http://crl.r2m02.amazontrust.com/r2m02.crl"
+          }
+,         {
+              "id"           : "cert_ocspURL",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "http://ocsp.r2m02.amazontrust.com"
+          }
+,         {
+              "id"           : "OCSP_stapling",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cert_mustStapleExtension",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "DNS_CAArecord",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "certificate_transparency",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "yes (certificate extension)"
+          }
+,         {
+              "id"           : "certs_countServer",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "4"
+          }
+,         {
+              "id"           : "certs_list_ordering_problem",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "cert_caIssuers",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Amazon RSA 2048 M02 (Amazon from US)"
+          }
+,         {
+              "id"           : "intermediate_cert <#1>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIEXjCCA0agAwIBAgITB3MSSkvL1E7HtTvq8ZSELToPoTANBgkqhkiG9w0BAQsFADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6b24gUm9vdCBDQSAxMB4XDTIyMDgyMzIyMjUzMFoXDTMwMDgyMzIyMjUzMFowPDELMAkGA1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEcMBoGA1UEAxMTQW1hem9uIFJTQSAyMDQ4IE0wMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALtDGMZaqHneKei1by6+pUPPLljTB143Si6VpEWPc6mSkFhZb/6qrkZyoHlQLbDYnI2D7hD0sdzEqfnuAjIsuXQLG3A8TvX6V3oFNBFVe8NlLJHvBseKY88saLwufxkZVwk74g4nWlNMXzla9Y5F3wwRHwMVH443xGz6UtGSZSqQ94eFx5X7Tlqt8whi8qCaKdZ5rNak+r9nUThOeClqFd4oXych//Rc7Y0eX1KNWHYSI1Nk31mYgiK3JvH063g+K9tHA63ZeTgKgndlh+WI+zv7i44HepRZjA1FYwYZ9Vv/9UkC5Yz8/yU65fgjaE+wVHM4e/YyC2osrPWE7gJ+dXMCAwEAAaOCAVowggFWMBIGA1UdEwEB/wQIMAYBAf8CAQAwDgYDVR0PAQH/BAQDAgGGMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAdBgNVHQ4EFgQUwDFSzVpQw4J8dHHOy+mc+XrrguIwHwYDVR0jBBgwFoAUhBjMhTTsvAyUlC4IWZzHshBOCggwewYIKwYBBQUHAQEEbzBtMC8GCCsGAQUFBzABhiNodHRwOi8vb2NzcC5yb290Y2ExLmFtYXpvbnRydXN0LmNvbTA6BggrBgEFBQcwAoYuaHR0cDovL2NydC5yb290Y2ExLmFtYXpvbnRydXN0LmNvbS9yb290Y2ExLmNlcjA/BgNVHR8EODA2MDSgMqAwhi5odHRwOi8vY3JsLnJvb3RjYTEuYW1hem9udHJ1c3QuY29tL3Jvb3RjYTEuY3JsMBMGA1UdIAQMMAowCAYGZ4EMAQIBMA0GCSqGSIb3DQEBCwUAA4IBAQAtTi6Fs0Azfi+iwm7jrz+CSxHH+uHl7Law3MQSXVtR8RV53PtR6r/6gNpqlzdoZq4FKbADi1v9Bun8RY8D51uedRfjsbeodizeBB8nXmeyD33Ep7VATj4ozcd31YFVfgRhvTSxNrrTlNpWkUk0m3BMPv8sg381HhA6uEYokE5q9uws/3YkKqRiEz3TsaWmJqIRZhMbgAfp7O7FUwFIb7UIspogZSKxPIWJpxiPo3TcBambbVtQOcNRWz5qCQdDslI2yayq0n2TXoHyNCLEH8rpsJRVILFsg0jc7BaFrMnF462+ajSehgj12IidNeRN4zl+EoNaWdpnWndvSpAEkq2P\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#1>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "B0F330A31A0C50987E1C3A7BB02C2DDA682991D3165B517BD44FBA4A6020BD94"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#1>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2022-08-23 22:25"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#1>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2030-08-23 22:25"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#1>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#1>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Amazon RSA 2048 M02 <-- Amazon Root CA 1"
+          }
+,         {
+              "id"           : "intermediate_cert <#2>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIEkjCCA3qgAwIBAgITBn+USionzfP6wq4rAfkI7rnExjANBgkqhkiG9w0BAQsFADCBmDELMAkGA1UEBhMCVVMxEDAOBgNVBAgTB0FyaXpvbmExEzARBgNVBAcTClNjb3R0c2RhbGUxJTAjBgNVBAoTHFN0YXJmaWVsZCBUZWNobm9sb2dpZXMsIEluYy4xOzA5BgNVBAMTMlN0YXJmaWVsZCBTZXJ2aWNlcyBSb290IENlcnRpZmljYXRlIEF1dGhvcml0eSAtIEcyMB4XDTE1MDUyNTEyMDAwMFoXDTM3MTIzMTAxMDAwMFowOTELMAkGA1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEZMBcGA1UEAxMQQW1hem9uIFJvb3QgQ0EgMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALJ4gHHKeNXjca9HgFB0fW7Y14h29Jlo91ghYPl0hAEvrAIthtOgQ3pOsqTQNroBvo3bSMgHFzZM9O6II8c+6zf1tRn4SWiw3te5djgdYZ6k/oI2peVKVuRF4fn9tBb6dNqcmzU5L/qwIFAGbHrQgLKm+a/sRxmPUDgH3KKHOVj4utWp+UhnMJbulHheb4mjUcAwhmahRWa6VOujw5H5SNz/0egwLX0tdHA114gk957EWW67c4cX8jJGKLhD+rcdqsq08p8kDi1L93FcXmn/6pUCyziKrlA4b9v7LWIbxcceVOF34GfID5yHI9Y/QCB/IIDEgEw+OyQmjgSubJrIqg0CAwEAAaOCATEwggEtMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgGGMB0GA1UdDgQWBBSEGMyFNOy8DJSULghZnMeyEE4KCDAfBgNVHSMEGDAWgBScXwDfqgHXMCs4iKK4bUqc8hGRgzB4BggrBgEFBQcBAQRsMGowLgYIKwYBBQUHMAGGImh0dHA6Ly9vY3NwLnJvb3RnMi5hbWF6b250cnVzdC5jb20wOAYIKwYBBQUHMAKGLGh0dHA6Ly9jcnQucm9vdGcyLmFtYXpvbnRydXN0LmNvbS9yb290ZzIuY2VyMD0GA1UdHwQ2MDQwMqAwoC6GLGh0dHA6Ly9jcmwucm9vdGcyLmFtYXpvbnRydXN0LmNvbS9yb290ZzIuY3JsMBEGA1UdIAQKMAgwBgYEVR0gADANBgkqhkiG9w0BAQsFAAOCAQEAYjdCXLwQtT6LLOkMm2xF4gcAevnFWAu5CIw+7bMlPLVvUOTNNWqnkzSWMiGpSESrnO09tKpzbeR/FoCJbM8oAxiDR3mjEH4wW6w7sGDgd9QIpuEdfF7Au/maeyKdpwAJfqxGF4PcnCZXmTA5YpaP7dreqsXMGz7KQ2hsVxa81Q4gLv7/wmpdLqBKbRRYh5TmOTFffHPLkIhqhBGWJ6bt2YFGpn6jcgAKUj6DiAdjd4lpFw85hdKrCEVN0FE6/V1dN2RMfjCyVSRCnTawXZwXgWHxyvkQAiSr6w10kY17RSlQOYiypok1JR4UakcjMS9cmvqtmg5iUaQqqcT5NJ0hGA==\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#2>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "87DCD4DC74640A322CD205552506D1BE64F12596258096544986B4850BC72706"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#2>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2015-05-25 12:00"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#2>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2037-12-31 01:00"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#2>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#2>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Amazon Root CA 1 <-- Starfield Services Root Certificate Authority - G2"
+          }
+,         {
+              "id"           : "intermediate_cert <#3>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIEdTCCA12gAwIBAgIJAKcOSkw0grd/MA0GCSqGSIb3DQEBCwUAMGgxCzAJBgNVBAYTAlVTMSUwIwYDVQQKExxTdGFyZmllbGQgVGVjaG5vbG9naWVzLCBJbmMuMTIwMAYDVQQLEylTdGFyZmllbGQgQ2xhc3MgMiBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTAeFw0wOTA5MDIwMDAwMDBaFw0zNDA2MjgxNzM5MTZaMIGYMQswCQYDVQQGEwJVUzEQMA4GA1UECBMHQXJpem9uYTETMBEGA1UEBxMKU2NvdHRzZGFsZTElMCMGA1UEChMcU3RhcmZpZWxkIFRlY2hub2xvZ2llcywgSW5jLjE7MDkGA1UEAxMyU3RhcmZpZWxkIFNlcnZpY2VzIFJvb3QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDVDDrEKvlO4vW+GZdfjohTsR8/y8+fIBNtKTrID30892t2OGPZNmCom15cAICyL1l/9of5JUOG52kbUpqQ4XHj2C0NTm/2yEnZtvMaVq4rtnQU68/7JuMauh2WLmo7WJSJR1b/JaCTcFOD2oR0FMNnngRoOt+OQFodSk7PQ5E751bWAHDLUu57fa4657wx+UX2wmDPE1kCK4DMNEffud6QZW0CzyyRpqbn3oUYSXxmTqM6bam17jQuug0DuDPfR+uxa40l2ZvOgdFFRjKWcIfeAg5JQ4W2bHO7ZOphQazJ1FTfhy/HIrImzJ9ZVGif/L4qL8RVHHVAYBeFAlU5i38FAgMBAAGjgfAwge0wDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0OBBYEFJxfAN+qAdcwKziIorhtSpzyEZGDMB8GA1UdIwQYMBaAFL9ft9HO3R+G9FtVrNzXEMIOqYjnME8GCCsGAQUFBwEBBEMwQTAcBggrBgEFBQcwAYYQaHR0cDovL28uc3MyLnVzLzAhBggrBgEFBQcwAoYVaHR0cDovL3guc3MyLnVzL3guY2VyMCYGA1UdHwQfMB0wG6AZoBeGFWh0dHA6Ly9zLnNzMi51cy9yLmNybDARBgNVHSAECjAIMAYGBFUdIAAwDQYJKoZIhvcNAQELBQADggEBACMd44pXyn3pF3lM8R5V/cxTbj5HD9/GVfKyBDbtgB9TxF00KGu+x1X8Z+rLP3+QsjPNG1gQggL4+C/1E2DUBc7xgQjB3ad1l08YuW3e95ORCLp+QCztweq7dp4zBncdDQh/U90bZKuCJ/Fp1U1ervShw3WnWEQt8jxwmKy6abaVd38PMV4s/KCHOkdp8Hlf9BRUpJVeEXgSYCfOn8J3/yNTd126/+pZ59vPr5KW7ySaNRB6nJHGDn2Z9j8Z3/VyVOEVqQdZe4O/Ui5GjLIAZHYcSNPYeehuVsyuLAOQ1xk4meTKCRlb/weWsKh/NEnfVqn3sF/tM+2MR7cwA130A4w=\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#3>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "28689B30E4C306AAB53B027B29E36AD6DD1DCF4B953994482CA84BDC1ECAC996"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#3>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2009-09-02 00:00"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#3>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2034-06-28 17:39"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#3>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#3>",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Starfield Services Root Certificate Authority - G2 <--"
+          }
+,         {
+              "id"           : "intermediate_cert_badOCSP",
+              "ip"           : "ntulearn.ntu.edu.sg/18.140.158.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "intermediate certificate(s) is/are ok"
+          }
+,         {
+              "id"           : "service",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "HTTP"
+          }
+,         {
+              "id"           : "pre_128cipher",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No 128 cipher limit bug"
+          }
+,         {
+              "id"           : "SSLv2",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "SSLv3",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1_1",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1_2",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "TLS1_3",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered + downgraded to weaker protocol"
+          }
+,         {
+              "id"           : "NPN",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "ALPN",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipher_order-tls1_2",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "server"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc02f",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDH 256   AESGCM      128      TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc030",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDH 256   AESGCM      256      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x9c",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   x9c     AES128-GCM-SHA256                 RSA        AESGCM      128      TLS_RSA_WITH_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x9d",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   x9d     AES256-GCM-SHA384                 RSA        AESGCM      256      TLS_RSA_WITH_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "cipherorder_TLSv1_2",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384 AES128-GCM-SHA256 AES256-GCM-SHA384"
+          }
+,         {
+              "id"           : "cipher_order",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "server"
+          }
+,         {
+              "id"           : "FS",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "FS_ciphers",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "FS_ECDHE_curves",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "prime256v1"
+          }
+,         {
+              "id"           : "FS_TLS12_sig_algs",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "RSA+SHA512 RSA+SHA384 RSA+SHA256 RSA+SHA224 RSA+SHA1"
+          }
+,         {
+              "id"           : "TLS_extensions",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "'renegotiation info/#65281' 'EC point formats/#11'"
+          }
+,         {
+              "id"           : "TLS_session_ticket",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no -- no lifetime advertised"
+          }
+,         {
+              "id"           : "SSL_sessionID_support",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "yes"
+          }
+,         {
+              "id"           : "sessionresumption_ticket",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not supported"
+          }
+,         {
+              "id"           : "sessionresumption_ID",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "supported"
+          }
+,         {
+              "id"           : "TLS_timestamp",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "random"
+          }
+,         {
+              "id"           : "cert_compression",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "N/A"
+          }
+,         {
+              "id"           : "clientAuth",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "none"
+          }
+,         {
+              "id"           : "cert_numbers",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "1"
+          }
+,         {
+              "id"           : "cert_signatureAlgorithm",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "SHA256 with RSA"
+          }
+,         {
+              "id"           : "cert_keySize",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "RSA 2048 bits (exponent is 65537)"
+          }
+,         {
+              "id"           : "cert_keyUsage",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Digital Signature, Key Encipherment"
+          }
+,         {
+              "id"           : "cert_extKeyUsage",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLS Web Server Authentication, TLS Web Client Authentication"
+          }
+,         {
+              "id"           : "cert_serialNumber",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "0EDFA831692206C224148A2EAA615DCA"
+          }
+,         {
+              "id"           : "cert_serialNumberLen",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "16"
+          }
+,         {
+              "id"           : "cert_fingerprintSHA1",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "6A0E49D755482A78D29C1D37B7F563106F332057"
+          }
+,         {
+              "id"           : "cert_fingerprintSHA256",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "629C71B0744D8F32F21009CAD96D6933B14540BBFA9F4F1E2110FA404EA132C2"
+          }
+,         {
+              "id"           : "cert",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "cert_commonName",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ntulearn.ntu.edu.sg"
+          }
+,         {
+              "id"           : "cert_commonName_wo_SNI",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ntulearn.ntu.edu.sg"
+          }
+,         {
+              "id"           : "cert_subjectAltName",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ntulearn.ntu.edu.sg *.blackboard.com ntulearntst.ntu.edu.sg ntulearnstg.ntu.edu.sg ntulearnmig.ntu.edu.sg"
+          }
+,         {
+              "id"           : "cert_trust",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "Ok via SAN and CN (same w/o SNI)"
+          }
+,         {
+              "id"           : "cert_chain_of_trust",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "passed."
+          }
+,         {
+              "id"           : "cert_certificatePolicies_EV",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "cert_expirationStatus",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "137 >= 60 days"
+          }
+,         {
+              "id"           : "cert_notBefore",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2024-06-06 00:00"
+          }
+,         {
+              "id"           : "cert_notAfter",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2025-07-05 23:59"
+          }
+,         {
+              "id"           : "cert_extlifeSpan",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "certificate has no extended life time according to browser forum"
+          }
+,         {
+              "id"           : "cert_eTLS",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not present"
+          }
+,         {
+              "id"           : "cert_crlDistributionPoints",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "http://crl.r2m02.amazontrust.com/r2m02.crl"
+          }
+,         {
+              "id"           : "cert_ocspURL",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "http://ocsp.r2m02.amazontrust.com"
+          }
+,         {
+              "id"           : "OCSP_stapling",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cert_mustStapleExtension",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "DNS_CAArecord",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "certificate_transparency",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "yes (certificate extension)"
+          }
+,         {
+              "id"           : "certs_countServer",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "4"
+          }
+,         {
+              "id"           : "certs_list_ordering_problem",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "cert_caIssuers",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Amazon RSA 2048 M02 (Amazon from US)"
+          }
+,         {
+              "id"           : "intermediate_cert <#1>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIEXjCCA0agAwIBAgITB3MSSkvL1E7HtTvq8ZSELToPoTANBgkqhkiG9w0BAQsFADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6b24gUm9vdCBDQSAxMB4XDTIyMDgyMzIyMjUzMFoXDTMwMDgyMzIyMjUzMFowPDELMAkGA1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEcMBoGA1UEAxMTQW1hem9uIFJTQSAyMDQ4IE0wMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALtDGMZaqHneKei1by6+pUPPLljTB143Si6VpEWPc6mSkFhZb/6qrkZyoHlQLbDYnI2D7hD0sdzEqfnuAjIsuXQLG3A8TvX6V3oFNBFVe8NlLJHvBseKY88saLwufxkZVwk74g4nWlNMXzla9Y5F3wwRHwMVH443xGz6UtGSZSqQ94eFx5X7Tlqt8whi8qCaKdZ5rNak+r9nUThOeClqFd4oXych//Rc7Y0eX1KNWHYSI1Nk31mYgiK3JvH063g+K9tHA63ZeTgKgndlh+WI+zv7i44HepRZjA1FYwYZ9Vv/9UkC5Yz8/yU65fgjaE+wVHM4e/YyC2osrPWE7gJ+dXMCAwEAAaOCAVowggFWMBIGA1UdEwEB/wQIMAYBAf8CAQAwDgYDVR0PAQH/BAQDAgGGMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAdBgNVHQ4EFgQUwDFSzVpQw4J8dHHOy+mc+XrrguIwHwYDVR0jBBgwFoAUhBjMhTTsvAyUlC4IWZzHshBOCggwewYIKwYBBQUHAQEEbzBtMC8GCCsGAQUFBzABhiNodHRwOi8vb2NzcC5yb290Y2ExLmFtYXpvbnRydXN0LmNvbTA6BggrBgEFBQcwAoYuaHR0cDovL2NydC5yb290Y2ExLmFtYXpvbnRydXN0LmNvbS9yb290Y2ExLmNlcjA/BgNVHR8EODA2MDSgMqAwhi5odHRwOi8vY3JsLnJvb3RjYTEuYW1hem9udHJ1c3QuY29tL3Jvb3RjYTEuY3JsMBMGA1UdIAQMMAowCAYGZ4EMAQIBMA0GCSqGSIb3DQEBCwUAA4IBAQAtTi6Fs0Azfi+iwm7jrz+CSxHH+uHl7Law3MQSXVtR8RV53PtR6r/6gNpqlzdoZq4FKbADi1v9Bun8RY8D51uedRfjsbeodizeBB8nXmeyD33Ep7VATj4ozcd31YFVfgRhvTSxNrrTlNpWkUk0m3BMPv8sg381HhA6uEYokE5q9uws/3YkKqRiEz3TsaWmJqIRZhMbgAfp7O7FUwFIb7UIspogZSKxPIWJpxiPo3TcBambbVtQOcNRWz5qCQdDslI2yayq0n2TXoHyNCLEH8rpsJRVILFsg0jc7BaFrMnF462+ajSehgj12IidNeRN4zl+EoNaWdpnWndvSpAEkq2P\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#1>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "B0F330A31A0C50987E1C3A7BB02C2DDA682991D3165B517BD44FBA4A6020BD94"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#1>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2022-08-23 22:25"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#1>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2030-08-23 22:25"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#1>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#1>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Amazon RSA 2048 M02 <-- Amazon Root CA 1"
+          }
+,         {
+              "id"           : "intermediate_cert <#2>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIEkjCCA3qgAwIBAgITBn+USionzfP6wq4rAfkI7rnExjANBgkqhkiG9w0BAQsFADCBmDELMAkGA1UEBhMCVVMxEDAOBgNVBAgTB0FyaXpvbmExEzARBgNVBAcTClNjb3R0c2RhbGUxJTAjBgNVBAoTHFN0YXJmaWVsZCBUZWNobm9sb2dpZXMsIEluYy4xOzA5BgNVBAMTMlN0YXJmaWVsZCBTZXJ2aWNlcyBSb290IENlcnRpZmljYXRlIEF1dGhvcml0eSAtIEcyMB4XDTE1MDUyNTEyMDAwMFoXDTM3MTIzMTAxMDAwMFowOTELMAkGA1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEZMBcGA1UEAxMQQW1hem9uIFJvb3QgQ0EgMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALJ4gHHKeNXjca9HgFB0fW7Y14h29Jlo91ghYPl0hAEvrAIthtOgQ3pOsqTQNroBvo3bSMgHFzZM9O6II8c+6zf1tRn4SWiw3te5djgdYZ6k/oI2peVKVuRF4fn9tBb6dNqcmzU5L/qwIFAGbHrQgLKm+a/sRxmPUDgH3KKHOVj4utWp+UhnMJbulHheb4mjUcAwhmahRWa6VOujw5H5SNz/0egwLX0tdHA114gk957EWW67c4cX8jJGKLhD+rcdqsq08p8kDi1L93FcXmn/6pUCyziKrlA4b9v7LWIbxcceVOF34GfID5yHI9Y/QCB/IIDEgEw+OyQmjgSubJrIqg0CAwEAAaOCATEwggEtMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgGGMB0GA1UdDgQWBBSEGMyFNOy8DJSULghZnMeyEE4KCDAfBgNVHSMEGDAWgBScXwDfqgHXMCs4iKK4bUqc8hGRgzB4BggrBgEFBQcBAQRsMGowLgYIKwYBBQUHMAGGImh0dHA6Ly9vY3NwLnJvb3RnMi5hbWF6b250cnVzdC5jb20wOAYIKwYBBQUHMAKGLGh0dHA6Ly9jcnQucm9vdGcyLmFtYXpvbnRydXN0LmNvbS9yb290ZzIuY2VyMD0GA1UdHwQ2MDQwMqAwoC6GLGh0dHA6Ly9jcmwucm9vdGcyLmFtYXpvbnRydXN0LmNvbS9yb290ZzIuY3JsMBEGA1UdIAQKMAgwBgYEVR0gADANBgkqhkiG9w0BAQsFAAOCAQEAYjdCXLwQtT6LLOkMm2xF4gcAevnFWAu5CIw+7bMlPLVvUOTNNWqnkzSWMiGpSESrnO09tKpzbeR/FoCJbM8oAxiDR3mjEH4wW6w7sGDgd9QIpuEdfF7Au/maeyKdpwAJfqxGF4PcnCZXmTA5YpaP7dreqsXMGz7KQ2hsVxa81Q4gLv7/wmpdLqBKbRRYh5TmOTFffHPLkIhqhBGWJ6bt2YFGpn6jcgAKUj6DiAdjd4lpFw85hdKrCEVN0FE6/V1dN2RMfjCyVSRCnTawXZwXgWHxyvkQAiSr6w10kY17RSlQOYiypok1JR4UakcjMS9cmvqtmg5iUaQqqcT5NJ0hGA==\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#2>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "87DCD4DC74640A322CD205552506D1BE64F12596258096544986B4850BC72706"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#2>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2015-05-25 12:00"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#2>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2037-12-31 01:00"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#2>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#2>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Amazon Root CA 1 <-- Starfield Services Root Certificate Authority - G2"
+          }
+,         {
+              "id"           : "intermediate_cert <#3>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIEdTCCA12gAwIBAgIJAKcOSkw0grd/MA0GCSqGSIb3DQEBCwUAMGgxCzAJBgNVBAYTAlVTMSUwIwYDVQQKExxTdGFyZmllbGQgVGVjaG5vbG9naWVzLCBJbmMuMTIwMAYDVQQLEylTdGFyZmllbGQgQ2xhc3MgMiBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTAeFw0wOTA5MDIwMDAwMDBaFw0zNDA2MjgxNzM5MTZaMIGYMQswCQYDVQQGEwJVUzEQMA4GA1UECBMHQXJpem9uYTETMBEGA1UEBxMKU2NvdHRzZGFsZTElMCMGA1UEChMcU3RhcmZpZWxkIFRlY2hub2xvZ2llcywgSW5jLjE7MDkGA1UEAxMyU3RhcmZpZWxkIFNlcnZpY2VzIFJvb3QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDVDDrEKvlO4vW+GZdfjohTsR8/y8+fIBNtKTrID30892t2OGPZNmCom15cAICyL1l/9of5JUOG52kbUpqQ4XHj2C0NTm/2yEnZtvMaVq4rtnQU68/7JuMauh2WLmo7WJSJR1b/JaCTcFOD2oR0FMNnngRoOt+OQFodSk7PQ5E751bWAHDLUu57fa4657wx+UX2wmDPE1kCK4DMNEffud6QZW0CzyyRpqbn3oUYSXxmTqM6bam17jQuug0DuDPfR+uxa40l2ZvOgdFFRjKWcIfeAg5JQ4W2bHO7ZOphQazJ1FTfhy/HIrImzJ9ZVGif/L4qL8RVHHVAYBeFAlU5i38FAgMBAAGjgfAwge0wDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0OBBYEFJxfAN+qAdcwKziIorhtSpzyEZGDMB8GA1UdIwQYMBaAFL9ft9HO3R+G9FtVrNzXEMIOqYjnME8GCCsGAQUFBwEBBEMwQTAcBggrBgEFBQcwAYYQaHR0cDovL28uc3MyLnVzLzAhBggrBgEFBQcwAoYVaHR0cDovL3guc3MyLnVzL3guY2VyMCYGA1UdHwQfMB0wG6AZoBeGFWh0dHA6Ly9zLnNzMi51cy9yLmNybDARBgNVHSAECjAIMAYGBFUdIAAwDQYJKoZIhvcNAQELBQADggEBACMd44pXyn3pF3lM8R5V/cxTbj5HD9/GVfKyBDbtgB9TxF00KGu+x1X8Z+rLP3+QsjPNG1gQggL4+C/1E2DUBc7xgQjB3ad1l08YuW3e95ORCLp+QCztweq7dp4zBncdDQh/U90bZKuCJ/Fp1U1ervShw3WnWEQt8jxwmKy6abaVd38PMV4s/KCHOkdp8Hlf9BRUpJVeEXgSYCfOn8J3/yNTd126/+pZ59vPr5KW7ySaNRB6nJHGDn2Z9j8Z3/VyVOEVqQdZe4O/Ui5GjLIAZHYcSNPYeehuVsyuLAOQ1xk4meTKCRlb/weWsKh/NEnfVqn3sF/tM+2MR7cwA130A4w=\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#3>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "28689B30E4C306AAB53B027B29E36AD6DD1DCF4B953994482CA84BDC1ECAC996"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#3>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2009-09-02 00:00"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#3>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2034-06-28 17:39"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#3>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#3>",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Starfield Services Root Certificate Authority - G2 <--"
+          }
+,         {
+              "id"           : "intermediate_cert_badOCSP",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "intermediate certificate(s) is/are ok"
+          }
+,         {
+              "id"           : "scanTime",
+              "ip"           : "ntulearn.ntu.edu.sg/3.0.10.155",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "79"
+          }
+]

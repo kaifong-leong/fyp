@@ -1,0 +1,975 @@
+[
+         {
+              "id"           : "engine_problem",
+              "ip"           : "/",
+              "port"         : "443",
+              "severity"     : "WARN",
+              "finding"      : "No engine or GOST support via engine with your ../bin/openssl.Linux.x86_64"
+          }
+,         {
+              "id"           : "service",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "HTTP"
+          }
+,         {
+              "id"           : "pre_128cipher",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No 128 cipher limit bug"
+          }
+,         {
+              "id"           : "SSLv2",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "SSLv3",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1_1",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1_2",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "TLS1_3",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered with final"
+          }
+,         {
+              "id"           : "NPN",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "ALPN_HTTP2",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "h2"
+          }
+,         {
+              "id"           : "ALPN",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "http/1.1"
+          }
+,         {
+              "id"           : "cipher_order-tls1_2",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "server -- server prioritizes ChaCha ciphers when preferred by clients"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc02b",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xc02b   ECDHE-ECDSA-AES128-GCM-SHA256     ECDH 253   AESGCM      128      TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xcca9",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xcca9   ECDHE-ECDSA-CHACHA20-POLY1305     ECDH 253   ChaCha20    256      TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc02c",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xc02c   ECDHE-ECDSA-AES256-GCM-SHA384     ECDH 253   AESGCM      256      TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc023",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "TLSv1.2   xc023   ECDHE-ECDSA-AES128-SHA256         ECDH 253   AES         128      TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc024",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "TLSv1.2   xc024   ECDHE-ECDSA-AES256-SHA384         ECDH 253   AES         256      TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc00a",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "TLSv1.2   xc00a   ECDHE-ECDSA-AES256-SHA            ECDH 253   AES         256      TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc02f",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDH 253   AESGCM      128      TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xcca8",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xcca8   ECDHE-RSA-CHACHA20-POLY1305       ECDH 253   ChaCha20    256      TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc030",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDH 253   AESGCM      256      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc027",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "TLSv1.2   xc027   ECDHE-RSA-AES128-SHA256           ECDH 253   AES         128      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc028",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "TLSv1.2   xc028   ECDHE-RSA-AES256-SHA384           ECDH 253   AES         256      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc014",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "TLSv1.2   xc014   ECDHE-RSA-AES256-SHA              ECDH 253   AES         256      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x9c",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   x9c     AES128-GCM-SHA256                 RSA        AESGCM      128      TLS_RSA_WITH_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x9d",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   x9d     AES256-GCM-SHA384                 RSA        AESGCM      256      TLS_RSA_WITH_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x3c",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "TLSv1.2   x3c     AES128-SHA256                     RSA        AES         128      TLS_RSA_WITH_AES_128_CBC_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x3d",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "TLSv1.2   x3d     AES256-SHA256                     RSA        AES         256      TLS_RSA_WITH_AES_256_CBC_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x2f",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "TLSv1.2   x2f     AES128-SHA                        RSA        AES         128      TLS_RSA_WITH_AES_128_CBC_SHA"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x35",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "TLSv1.2   x35     AES256-SHA                        RSA        AES         256      TLS_RSA_WITH_AES_256_CBC_SHA"
+          }
+,         {
+              "id"           : "cipherorder_TLSv1_2",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ECDHE-ECDSA-AES128-GCM-SHA256 ECDHE-ECDSA-CHACHA20-POLY1305 ECDHE-ECDSA-AES256-GCM-SHA384 ECDHE-ECDSA-AES128-SHA256 ECDHE-ECDSA-AES256-SHA384 ECDHE-ECDSA-AES256-SHA ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-CHACHA20-POLY1305 ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA AES128-GCM-SHA256 AES256-GCM-SHA384 AES128-SHA256 AES256-SHA256 AES128-SHA AES256-SHA"
+          }
+,         {
+              "id"           : "prioritize_chacha_TLSv1_2",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "true"
+          }
+,         {
+              "id"           : "cipher_order-tls1_3",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "server -- server prioritizes ChaCha ciphers when preferred by clients"
+          }
+,         {
+              "id"           : "cipher-tls1_3_x1301",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.3   x1301   TLS_AES_128_GCM_SHA256            ECDH 253   AESGCM      128      TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_3_x1303",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.3   x1303   TLS_CHACHA20_POLY1305_SHA256      ECDH 253   ChaCha20    256      TLS_CHACHA20_POLY1305_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_3_x1302",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.3   x1302   TLS_AES_256_GCM_SHA384            ECDH 253   AESGCM      256      TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "cipherorder_TLSv1_3",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLS_AES_128_GCM_SHA256 TLS_CHACHA20_POLY1305_SHA256 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "prioritize_chacha_TLSv1_3",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "true"
+          }
+,         {
+              "id"           : "cipher_order",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "server"
+          }
+,         {
+              "id"           : "FS",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "FS_ciphers",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLS_AES_256_GCM_SHA384 TLS_CHACHA20_POLY1305_SHA256 ECDHE-RSA-AES256-GCM-SHA384 ECDHE-ECDSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-ECDSA-AES256-SHA384 ECDHE-RSA-AES256-SHA ECDHE-ECDSA-AES256-SHA ECDHE-ECDSA-CHACHA20-POLY1305 ECDHE-RSA-CHACHA20-POLY1305 TLS_AES_128_GCM_SHA256 ECDHE-RSA-AES128-GCM-SHA256 ECDHE-ECDSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-ECDSA-AES128-SHA256"
+          }
+,         {
+              "id"           : "FS_ECDHE_curves",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "prime256v1 X25519"
+          }
+,         {
+              "id"           : "FS_TLS12_sig_algs",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "RSA-PSS-RSAE+SHA256 RSA-PSS-RSAE+SHA384 RSA-PSS-RSAE+SHA512 RSA+SHA256 RSA+SHA384 RSA+SHA512 RSA+SHA224 ECDSA+SHA256 ECDSA+SHA384 ECDSA+SHA512 ECDSA+SHA224"
+          }
+,         {
+              "id"           : "FS_TLS13_sig_algs",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ECDSA+SHA256"
+          }
+,         {
+              "id"           : "TLS_extensions",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'encrypt-then-mac/#22' 'extended master secret/#23'"
+          }
+,         {
+              "id"           : "TLS_session_ticket",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no -- no lifetime advertised"
+          }
+,         {
+              "id"           : "SSL_sessionID_support",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "sessionresumption_ticket",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not supported"
+          }
+,         {
+              "id"           : "sessionresumption_ID",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "No Session ID, no resumption"
+          }
+,         {
+              "id"           : "TLS_timestamp",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "random"
+          }
+,         {
+              "id"           : "certificate_compression",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "none"
+          }
+,         {
+              "id"           : "clientAuth",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "none"
+          }
+,         {
+              "id"           : "cert_numbers",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2"
+          }
+,         {
+              "id"           : "cert_signatureAlgorithm <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "SHA256 with RSA"
+          }
+,         {
+              "id"           : "cert_keySize <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "RSA 4096 bits (exponent is 65537)"
+          }
+,         {
+              "id"           : "cert_keyUsage <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Digital Signature, Key Encipherment"
+          }
+,         {
+              "id"           : "cert_extKeyUsage <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLS Web Server Authentication, TLS Web Client Authentication"
+          }
+,         {
+              "id"           : "cert_serialNumber <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "8BC849C01D71E66216C65C99426479A5"
+          }
+,         {
+              "id"           : "cert_serialNumberLen <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "16"
+          }
+,         {
+              "id"           : "cert_fingerprintSHA1 <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "16B19284E8D63E818E28C9DB0AC88CB54BC8FFF2"
+          }
+,         {
+              "id"           : "cert_fingerprintSHA256 <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "E08E4417399DD6366EAF8FA4E0A6677D3514EFFAAA2549430EDC86F85DAD345A"
+          }
+,         {
+              "id"           : "cert <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "cert_commonName <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "github.com"
+          }
+,         {
+              "id"           : "cert_commonName_wo_SNI <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "github.com"
+          }
+,         {
+              "id"           : "cert_subjectAltName <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "github.com www.github.com"
+          }
+,         {
+              "id"           : "cert_trust <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "Ok via SAN and CN (same w/o SNI)"
+          }
+,         {
+              "id"           : "cert_chain_of_trust <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "passed."
+          }
+,         {
+              "id"           : "cert_certificatePolicies_EV <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "cert_expirationStatus <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 60 days (50)"
+          }
+,         {
+              "id"           : "cert_notBefore <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2024-04-09 00:00"
+          }
+,         {
+              "id"           : "cert_notAfter <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "MEDIUM",
+              "finding"      : "2025-04-09 23:59"
+          }
+,         {
+              "id"           : "cert_extlifeSpan <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "certificate has no extended life time according to browser forum"
+          }
+,         {
+              "id"           : "cert_eTLS <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not present"
+          }
+,         {
+              "id"           : "cert_crlDistributionPoints <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "cert_ocspURL <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "http://ocsp.sectigo.com"
+          }
+,         {
+              "id"           : "OCSP_stapling <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cert_mustStapleExtension <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "DNS_CAArecord <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "certificate_transparency <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "yes (certificate extension)"
+          }
+,         {
+              "id"           : "certs_countServer <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "3"
+          }
+,         {
+              "id"           : "certs_list_ordering_problem <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "cert_caIssuers <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Sectigo RSA Domain Validation Secure Server CA (Sectigo Limited from GB)"
+          }
+,         {
+              "id"           : "intermediate_cert <#1> <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#1> <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "7FA4FF68EC04A99D7528D5085F94907F4D1DD1C5381BACDC832ED5C960214676"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#1> <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2018-11-02 00:00"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#1> <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2030-12-31 23:59"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#1> <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#1> <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Sectigo RSA Domain Validation Secure Server CA <-- USERTrust RSA Certification Authority"
+          }
+,         {
+              "id"           : "intermediate_cert <#2> <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFgTCCBGmgAwIBAgIQOXJEOvkit1HX02wQ3TE1lTANBgkqhkiG9w0BAQwFADB7MQswCQYDVQQGEwJHQjEbMBkGA1UECAwSR3JlYXRlciBNYW5jaGVzdGVyMRAwDgYDVQQHDAdTYWxmb3JkMRowGAYDVQQKDBFDb21vZG8gQ0EgTGltaXRlZDEhMB8GA1UEAwwYQUFBIENlcnRpZmljYXRlIFNlcnZpY2VzMB4XDTE5MDMxMjAwMDAwMFoXDTI4MTIzMTIzNTk1OVowgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBOZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgUlNBIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAgBJlFzYOw9sIs9CsVw127c0n00ytUINh4qogTQktZAnczomfzD2p7PbPwdzx07HWezcoEStH2jnGvDoZtF+mvX2do2NCtnbyqTsrkfjib9DsFiCQCT7i6HTJGLSR1GJk23+jBvGIGGqQIjy8/hPwhxR79uQfjtTkUcYRZ0YIUcuGFFQ/vDP+fmyc/xadGL1RjjWmp2bIcmfbIWax1Jt4A8BQOujM8Ny8nkz+rwWWNR9XWrf/zvk9tyy29lTdyOcSOk2uTIq3XJq0tyA9yn8iNK5+O2hmAUTnAU5GU5szYPeUvlM3kHND8zLDU+/bqv50TmnHa4xgk97Exwzf4TKuzJM7UXiVZ4vuPVb+DNBpDxsP8yUmazNt925H+nND5X4OpWaxKXwyhGNVicQNwZNUMBkTrNN9N6frXTpsNVzbQdcS2qlJC9/YgIoJk2KOtWbPJYjNhLixP6Q5D9kCnusSTJV882sFqV4Wg8y4Z+LoE53MW4LTTLPtW//e5XOsIzstAL81VXQJSdhJWBp/kjbmUZIO8yZ9HE0XvMnsQybQv0FfQKlERPSZ51eHnlAfV1SoPv10Yy+xUGUJ5lhCLkMaTLTwJUdZ+gQek9QmRkpQgbLevni3/GcV4clXhB4PY9bpYrrWX1Uu6lzGKAgEJTm4Diup8kyXHAc/DVL17e8vgg8CAwEAAaOB8jCB7zAfBgNVHSMEGDAWgBSgEQojPpbxB+zirynvgqV/0DCktDAdBgNVHQ4EFgQUU3m/WqorSs9UgOHYm8Cd8rIDZsswDgYDVR0PAQH/BAQDAgGGMA8GA1UdEwEB/wQFMAMBAf8wEQYDVR0gBAowCDAGBgRVHSAAMEMGA1UdHwQ8MDowOKA2oDSGMmh0dHA6Ly9jcmwuY29tb2RvY2EuY29tL0FBQUNlcnRpZmljYXRlU2VydmljZXMuY3JsMDQGCCsGAQUFBwEBBCgwJjAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuY29tb2RvY2EuY29tMA0GCSqGSIb3DQEBDAUAA4IBAQAYh1HcdCE9nIrgJ7cz0C7M7PDmy14R3iJvm3WOnnL+5Nb+qh+cli3vA0p+rvSNb3I8QzvAP+u431yqqcau8vzY7qN7Q/aGNnwU4M309z/+3ri0ivCRlv79Q2R+/czSAaF9ffgZGclCKxO/WIu6pKJmBHaIkU4MiRTOok3JMrO66BQavHHxW/BBC5gACiIDEOUMsfnNkjcZ7Tvx5Dq2+UUTJnWvu6rvP3t3O9LEApE9GQDTF1w52z97GA1FzZOFli9d31kWTz9RvdVFGD/tSo7oBmF0Ixa1DVBzJ0RHfxBdiSprhTEUxOipakyAvGp4z7h/jnZymQyd/teRCBaho1+V\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#2> <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "68B9C761219A5B1F0131784474665DB61BBDB109E00F05CA9F74244EE5F5F52B"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#2> <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2019-03-12 00:00"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#2> <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2028-12-31 23:59"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#2> <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#2> <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "USERTrust RSA Certification Authority <-- AAA Certificate Services"
+          }
+,         {
+              "id"           : "intermediate_cert_badOCSP <hostCert#1>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "intermediate certificate(s) is/are ok"
+          }
+,         {
+              "id"           : "cert_signatureAlgorithm <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ECDSA with SHA256"
+          }
+,         {
+              "id"           : "cert_keySize <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "EC 256 bits (curve P-256)"
+          }
+,         {
+              "id"           : "cert_keyUsage <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Digital Signature"
+          }
+,         {
+              "id"           : "cert_extKeyUsage <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "TLS Web Server Authentication, TLS Web Client Authentication"
+          }
+,         {
+              "id"           : "cert_serialNumber <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "AB6686B5627BE80596821330128649F5"
+          }
+,         {
+              "id"           : "cert_serialNumberLen <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "16"
+          }
+,         {
+              "id"           : "cert_fingerprintSHA1 <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "E43371DDD6914A75B61F9E4F746D9BF0DD26FC3A"
+          }
+,         {
+              "id"           : "cert_fingerprintSHA256 <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "B8BB81876833873942045A8DF8F06219E00602EBCB4384C7ABC24F18379C87F5"
+          }
+,         {
+              "id"           : "cert <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIEoTCCBEigAwIBAgIRAKtmhrVie+gFloITMBKGSfUwCgYIKoZIzj0EAwIwgY8xCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNVBAcTB1NhbGZvcmQxGDAWBgNVBAoTD1NlY3RpZ28gTGltaXRlZDE3MDUGA1UEAxMuU2VjdGlnbyBFQ0MgRG9tYWluIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBDQTAeFw0yNTAyMDUwMDAwMDBaFw0yNjAyMDUyMzU5NTlaMBUxEzARBgNVBAMTCmdpdGh1Yi5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQgNFxG/yzL+CSarvC7L3epH5chNnG6wiYYxR5D/Z1J4MxGnIX8KbT5fCgLoyzHXL9v50bdBIq6y4AtN4gN7gbWo4IC/DCCAvgwHwYDVR0jBBgwFoAU9oUKOxGG4QR9DqoLLNLuzGR7e64wHQYDVR0OBBYEFFPIf96emE7HTda83quVPjA9PdHIMA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgIHMCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECATCBhAYIKwYBBQUHAQEEeDB2ME8GCCsGAQUFBzAChkNodHRwOi8vY3J0LnNlY3RpZ28uY29tL1NlY3RpZ29FQ0NEb21haW5WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EuY3J0MCMGCCsGAQUFBzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCCAX4GCisGAQQB1nkCBAIEggFuBIIBagFoAHUAlpdkv1VYl633Q4doNwhCd+nwOtX2pPM2bkakPw/KqcYAAAGU02uUSwAABAMARjBEAiA7i6o+LpQjt6AeEjltHhs/TiECnHd0xTeer/3vD1xgsAIgYlGwRot+SqEBCs//frx/YHTPwox9QLdy7GjTLWHfcMAAdwAZhtTHKKpv/roDb3gqTQGRqs4tcjEPrs5dcEEtJUzH1AAAAZTTa5PtAAAEAwBIMEYCIQDlrInx7J+3MfqgxB2+Fvq3dMlk1qj4chOw/+HkYVfG0AIhAMT+JKAQfUuIdBGxfryrGrwsOD3pRs1tyAyykdPGRgsTAHYAyzj3FYl8hKFEX1vB3fvJbvKaWc1HCmkFhbDLFMMUWOcAAAGU02uUJQAABAMARzBFAiEA1GKW92agDFNJIYrMH3gaJdXsdIVpUcZOfxH1FksbuLECIFJCfslINhc53Q0TIMJHdcFOW2tgG4tBA1dL881tXbMnMCUGA1UdEQQeMByCCmdpdGh1Yi5jb22CDnd3dy5naXRodWIuY29tMAoGCCqGSM49BAMCA0cAMEQCIHGMp27BBBJ1356lCe2WYyzYIp/fAONQM3AkeE/fym0sAiBtVfN3YgIZ+neHEfwcRhhz4uDpc8F+tKmtceWJSicMkA==\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "cert_commonName <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "github.com"
+          }
+,         {
+              "id"           : "cert_commonName_wo_SNI <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "github.com"
+          }
+,         {
+              "id"           : "cert_subjectAltName <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "github.com www.github.com"
+          }
+,         {
+              "id"           : "cert_trust <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "Ok via SAN and CN (same w/o SNI)"
+          }
+,         {
+              "id"           : "cert_chain_of_trust <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "passed."
+          }
+,         {
+              "id"           : "cert_certificatePolicies_EV <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "cert_expirationStatus <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "352 >= 60 days"
+          }
+,         {
+              "id"           : "cert_notBefore <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2025-02-05 00:00"
+          }
+,         {
+              "id"           : "cert_notAfter <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2026-02-05 23:59"
+          }
+,         {
+              "id"           : "cert_extlifeSpan <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "certificate has no extended life time according to browser forum"
+          }
+,         {
+              "id"           : "cert_eTLS <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "not present"
+          }
+,         {
+              "id"           : "cert_crlDistributionPoints <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "cert_ocspURL <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "http://ocsp.sectigo.com"
+          }
+,         {
+              "id"           : "OCSP_stapling <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cert_mustStapleExtension <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "DNS_CAArecord <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "certificate_transparency <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "yes (certificate extension)"
+          }
+,         {
+              "id"           : "certs_countServer <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "3"
+          }
+,         {
+              "id"           : "certs_list_ordering_problem <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "cert_caIssuers <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Sectigo ECC Domain Validation Secure Server CA (Sectigo Limited from GB)"
+          }
+,         {
+              "id"           : "intermediate_cert <#1> <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIDqDCCAy6gAwIBAgIRAPNkTmtuAFAjfglGvXvh9R0wCgYIKoZIzj0EAwMwgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBOZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgRUNDIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTE4MTEwMjAwMDAwMFoXDTMwMTIzMTIzNTk1OVowgY8xCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNVBAcTB1NhbGZvcmQxGDAWBgNVBAoTD1NlY3RpZ28gTGltaXRlZDE3MDUGA1UEAxMuU2VjdGlnbyBFQ0MgRG9tYWluIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBDQTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABHkYk8qfbZ5sVwAjBTcLXw9YWsTef1Wj6R7W2SUKiKAgSh16TwUwimNJE4xkIQeV/To14UrOkPAY9z2vaKb71EijggFuMIIBajAfBgNVHSMEGDAWgBQ64QmG1M8ZwpZ2dEl23OA1xmNjmjAdBgNVHQ4EFgQU9oUKOxGG4QR9DqoLLNLuzGR7e64wDgYDVR0PAQH/BAQDAgGGMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMBsGA1UdIAQUMBIwBgYEVR0gADAIBgZngQwBAgEwUAYDVR0fBEkwRzBFoEOgQYY/aHR0cDovL2NybC51c2VydHJ1c3QuY29tL1VTRVJUcnVzdEVDQ0NlcnRpZmljYXRpb25BdXRob3JpdHkuY3JsMHYGCCsGAQUFBwEBBGowaDA/BggrBgEFBQcwAoYzaHR0cDovL2NydC51c2VydHJ1c3QuY29tL1VTRVJUcnVzdEVDQ0FkZFRydXN0Q0EuY3J0MCUGCCsGAQUFBzABhhlodHRwOi8vb2NzcC51c2VydHJ1c3QuY29tMAoGCCqGSM49BAMDA2gAMGUCMEvnx3FcsVwJbZpCYF9z6fDWJtS1UVRscS0chWBNKPFNpvDKdrdKRe+oAkr2jU+ubgIxAODheSr2XhcA7oz9HmedGdMhlrd94ToKFbZl+/OnFFzqnvOhcjHvClECEQcKmc8fmA==\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#1> <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "61E97375E9F6DA982FF5C19E2F94E66C4E35B6837CE3B914D2245C7F5F65825F"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#1> <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2018-11-02 00:00"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#1> <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2030-12-31 23:59"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#1> <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#1> <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Sectigo ECC Domain Validation Secure Server CA <-- USERTrust ECC Certification Authority"
+          }
+,         {
+              "id"           : "intermediate_cert <#2> <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIID0zCCArugAwIBAgIQVmcdBOpPmUxvEIFHWdJ1lDANBgkqhkiG9w0BAQwFADB7MQswCQYDVQQGEwJHQjEbMBkGA1UECAwSR3JlYXRlciBNYW5jaGVzdGVyMRAwDgYDVQQHDAdTYWxmb3JkMRowGAYDVQQKDBFDb21vZG8gQ0EgTGltaXRlZDEhMB8GA1UEAwwYQUFBIENlcnRpZmljYXRlIFNlcnZpY2VzMB4XDTE5MDMxMjAwMDAwMFoXDTI4MTIzMTIzNTk1OVowgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBOZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgRUNDIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEGqxUWqn5aCPnetUkb1PGWthLq8bVttHmc3Gu3ZzWDGH926CJA7gFFOxXzu5dP+Ihs8731Ip54KODfi2X0GHE8ZncJZFjq38wo7Rw4sehM5zzvy5cU7Ffs30yf4o043l5o4HyMIHvMB8GA1UdIwQYMBaAFKARCiM+lvEH7OKvKe+CpX/QMKS0MB0GA1UdDgQWBBQ64QmG1M8ZwpZ2dEl23OA1xmNjmjAOBgNVHQ8BAf8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zARBgNVHSAECjAIMAYGBFUdIAAwQwYDVR0fBDwwOjA4oDagNIYyaHR0cDovL2NybC5jb21vZG9jYS5jb20vQUFBQ2VydGlmaWNhdGVTZXJ2aWNlcy5jcmwwNAYIKwYBBQUHAQEEKDAmMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20wDQYJKoZIhvcNAQEMBQADggEBABns652JLCALBIAdGN5CmXKZFjK9Dpx1WywV4ilAbe7/ctvbq5AfjJXyij0IckKJUAfiORVsAYfZFhr1wHUrxeZWEQff2Ji8fJ8ZOd+LygBkc7xGEJuTI42+FsMuCIKchjN0djsoTI0DQoWz4rIjQtUfenVqGtF8qmchxDM6OW1TyaLtYiKou+JVbJlsQ2uRl9EMC5MCHdK8aXdJ5htN978UeAOwproLtOGFfy/cQjutdAFI3tZs4RmYCV4Ks2dH/hzg1cEo70qLRDEmBDeNiXQ2Lu+lIg+DdEmSx/cQwgwp+7e9un/jX9Wf8qn0dNW44bOwgeThpWOjzOoEeJBuv/c=\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#2> <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "A6CF64DBB4C8D5FD19CE48896068DB03B533A8D1336C6256A87D00CBB3DEF3EA"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#2> <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2019-03-12 00:00"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#2> <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2028-12-31 23:59"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#2> <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#2> <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "USERTrust ECC Certification Authority <-- AAA Certificate Services"
+          }
+,         {
+              "id"           : "intermediate_cert_badOCSP <hostCert#2>",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "intermediate certificate(s) is/are ok"
+          }
+,         {
+              "id"           : "scanTime",
+              "ip"           : "github.com/20.205.243.166",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "111"
+          }
+]

@@ -8,7 +8,7 @@
 <div class="col-md-12">
     <h2>Results for URL: {{ instance.url }}</h2>
     <p>Submitted on: {{ instance.date }}</p>
-    <table class="table table-bordered">
+    <!-- <table class="table table-bordered">
         <thead>
             <tr>
                 <th>Protocol</th>
@@ -22,8 +22,48 @@
             <tr><td>TLS 1.1</td><td>{{ instance.value_tls11 }}</td></tr>
             <tr><td>TLS 1.2</td><td>{{ instance.value_tls12 }}</td></tr>
             <tr><td>TLS 1.3</td><td>{{ instance.value_tls13 }}</td></tr>
+            <tr><td>TLS 1.0 Ciphersuites</td><td>{{ instance.tls10_ciphers }}</td></tr>
+            <tr><td>TLS 1.1 Ciphersuites</td><td>{{ instance.tls11_ciphers }}</td></tr>
+            <tr><td>TLS 1.2 Ciphersuites</td><td>{{ instance.tls12_ciphers }}</td></tr>
+            <tr><td>TLS 1.3 Ciphersuites</td><td>{{ instance.tls13_ciphers }}</td></tr>
+            <tr><td>Quantum Safe Key Exchange Algorithms</td><td>{{ instance.kems }}</td></tr>
+            <tr><td>ECDHE Curves</td><td>{{ instance.ecdhe_curves }}</td></tr>
+            <tr><td>TLS 1.2 Signature Algorithms</td><td>{{ instance.tls12_sig_alg }}</td></tr>
+            <tr><td>TLS 1.3 Signature Algorithms</td><td>{{ instance.tls13_sig_alg }}</td></tr>
+            <tr><td>Certificate Signature Algorithm</td><td>{{ instance.cert_sig_alg }}</td></tr>
+            <tr><td>Certificate</td><td>{{ instance.cert }}</td></tr>
         </tbody>
-    </table>
+    </table> -->
+    
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Protocol</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>SSLv2</td><td>{{ instance.value_sslv2 }}</td></tr>
+                <tr><td>SSLv3</td><td>{{ instance.value_sslv3 }}</td></tr>
+                <tr><td>TLS 1.0</td><td>{{ instance.value_tls1 }}</td></tr>
+                <tr><td>TLS 1.1</td><td>{{ instance.value_tls11 }}</td></tr>
+                <tr><td>TLS 1.2</td><td>{{ instance.value_tls12 }}</td></tr>
+                <tr><td>TLS 1.3</td><td>{{ instance.value_tls13 }}</td></tr>
+                <tr><td>TLS 1.0 Ciphersuites</td><td class="wrap-text">{{ instance.tls10_ciphers }}</td></tr>
+                <tr><td>TLS 1.1 Ciphersuites</td><td class="wrap-text">{{ instance.tls11_ciphers }}</td></tr>
+                <tr><td>TLS 1.2 Ciphersuites</td><td class="wrap-text">{{ instance.tls12_ciphers }}</td></tr>
+                <tr><td>TLS 1.3 Ciphersuites</td><td class="wrap-text">{{ instance.tls13_ciphers }}</td></tr>
+                <tr><td>Quantum Safe Key Exchange Algorithms</td><td class="wrap-text">{{ instance.kems }}</td></tr>
+                <tr><td>ECDHE Curves</td><td class="wrap-text">{{ instance.ecdhe_curves }}</td></tr>
+                <tr><td>TLS 1.2 Signature Algorithms</td><td class="wrap-text">{{ instance.tls12_sig_alg }}</td></tr>
+                <tr><td>TLS 1.3 Signature Algorithms</td><td class="wrap-text">{{ instance.tls13_sig_alg }}</td></tr>
+                <tr><td>Certificate Signature Algorithm</td><td class="wrap-text">{{ instance.cert_sig_alg }}</td></tr>
+                <tr><td>Certificate</td><td class="wrap-text">{{ instance.cert }}</td></tr>
+            </tbody>
+        </table>
+    </div>
+
     <a href="{% url 'home' %}" class="btn btn-primary">Go Back</a>
 </div>
 {% endblock %}
