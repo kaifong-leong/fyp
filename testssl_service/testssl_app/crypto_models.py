@@ -148,7 +148,7 @@ class ECNamedCurve(CryptoAsset):
         default=0,
         null=True,
     )
-    clasical_strength = models.IntegerField(
+    classical_strength = models.IntegerField( # fixed typo from clasical to classical
         default=0,
         null=True,
     )
@@ -279,7 +279,7 @@ class X509Certificate(PrintableModel):
 class TLSProtocolVariant(CryptoAsset):  # export or standard
     class Meta(CryptoAsset.Meta):
         verbose_name = _("TLS protocol variant")
-        verbose_name_plural = _("TLS protocol varaints")
+        verbose_name_plural = _("TLS protocol variants") # fixed spelling form varaints to variants
 
 
 class TLSProtocolVersionManager(models.Manager):

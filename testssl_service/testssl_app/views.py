@@ -4,21 +4,18 @@ import pandas as pd
 
 from django.shortcuts import render, redirect
 
-from .forms import URLForm
-from .models import URLItem
+from .forms import URLForm, TestsslForm
+from .models import URLItem, TestsslScan
 
 def homepage(request):
-    # result_df = None
-    # extracted_values = None
 
     if request.method == "POST":
-        form = URLForm(request.POST)
+        form = TestsslForm(request.POST)
         if form.is_valid():
             
             url = form.cleaned_data['url']
             form_instance = form.save(commit=False)  # Create instance but don't save yet
 
-            # script_path = '/home/kaifong/testssl.sh/testssl.sh'
             # Define Docker paths
             docker_image = "oqs-testssl"  # Name of your Docker image
             results_dir_host = os.path.abspath("../testssl_service/testssl_docker/results")  # Local results directory
@@ -36,9 +33,7 @@ def homepage(request):
             ]
 
             try: 
-                # result = subprocess.run(['wsl', 'bash', script_path, '--csvfile', 'results.csv', '--overwrite', url], capture_output=True, text=True)
-                result = subprocess.run(docker_command, capture_output=True, text=True)
-                # print(result.returncode)     
+                result = subprocess.run(docker_command, capture_output=True, text=True)     
                 
                 # if Docker fails
                 if result.returncode != 0: 
@@ -83,43 +78,19 @@ def homepage(request):
                             if not matching_row.empty:
                                 setattr(form_instance, model_field, matching_row.values[0])  # Dynamic assignment
 
+
+
                         form_instance.save()
 
-                        # form_instance.value_sslv2 = result_df.loc[result_df['id'] == 'SSLv2', 'finding'].values[0]
-                        # form_instance.value_sslv3 = result_df.loc[result_df['id'] == 'SSLv3', 'finding'].values[0]
-                        # form_instance.value_tls1 = result_df.loc[result_df['id'] == 'TLS1', 'finding'].values[0]
-                        # form_instance.value_tls11 = result_df.loc[result_df['id'] == 'TLS1_1', 'finding'].values[0]
-                        # form_instance.value_tls12 = result_df.loc[result_df['id'] == 'TLS1_2', 'finding'].values[0]
-                        # form_instance.value_tls13 = result_df.loc[result_df['id'] == 'TLS1_3', 'finding'].values[0]
-
-                        # form_instance.save()
                         if form_instance.id is None:
                             print("Error: form_instance not saved correctly!")
                             return render(request, 'testssl_app/error.html', {"message": "Could not save instance."})
-
-                        # extracted_values = {
-                        #     'sslv2': form_instance.value_sslv2,
-                        #     'sslv3': form_instance.value_sslv3,
-                        #     'tls1': form_instance.value_tls1,
-                        #     'tls11': form_instance.value_tls11,
-                        #     'tls12': form_instance.value_tls12,
-                        #     'tls13': form_instance.value_tls13,
-                        # }
-
-                        # if value_sslv2:
-                        #     print(f"{value_sslv2, value_sslv3, value_tls1, value_tls11, value_tls12, value_tls13}")
-                        # else:
-                        #     print("No matching value found")
-                    # else:
-                    #     print("Results file not generated.")
-                # else:
-                #     print(f"Docker Error: {result.stderr}")
             
             except Exception as e:
                 print(f"Error running Docker command and saving results: {str(e)}")
             
             return redirect('results', instance_id=form_instance.id)
-    form = URLForm()
+    form = TestsslForm()
 
     page = {
         "forms": form,
@@ -130,19 +101,19 @@ def homepage(request):
 
 def results(request, instance_id):
     try:
-        instance = URLItem.objects.get(id=instance_id)
+        instance = TestsslScan.objects.get(id=instance_id)
         page = {
             "title": "testssl results",
             "instance": instance,
         }
         return render(request, 'testssl_app/results.html', page)
-    except URLItem.DoesNotExist:
+    except TestsslScan.DoesNotExist:
         return render(request, 'testssl_app/error.html', {"message": "Results not found"})
 
 
 def history(request):
 
-    url_list = URLItem.objects.order_by("-date")
+    url_list = TestsslScan.objects.order_by("-date")
 
 
     page = {

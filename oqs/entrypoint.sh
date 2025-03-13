@@ -14,7 +14,8 @@ for ip in "$@"
 do
     echo "Running testssl.sh for IP: $ip"
     # ../testssl.sh -p --jsonfile "results_${ip}.json" --csvfile "results_${ip}.csv" --overwrite "$ip"
-    ../testssl.sh -p -P -f -S --jsonfile "results_${ip}.json" --csvfile "results_${ip}.csv" --overwrite "$ip"
+    # ../testssl.sh -p -P -f -S --jsonfile "results_${ip}.json" --csvfile "results_${ip}.csv" --overwrite "$ip"
+    ../testssl.sh -p -P -f -S --jsonfile "results.json" --csvfile "results.csv" --overwrite "$ip"
 done
 
 echo "All scans completed. Results stored in /opt/testssl.sh/results"
