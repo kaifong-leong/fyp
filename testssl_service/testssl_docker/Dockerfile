@@ -1,59 +1,43 @@
-# syntax=docker.io/docker/dockerfile:1
+# Use the OpenQuantumSafe OpenSSL 3 image as the base
+FROM openquantumsafe/ci-ubuntu-jammy:latest AS builder
 
-ARG LEAP_VERSION=15.5
-ARG INSTALL_ROOT=/rootfs
+# Create a non-root user
+RUN useradd -m -s /bin/bash testssl
 
-FROM opensuse/leap:${LEAP_VERSION} as builder
-ARG CACHE_ZYPPER=/tmp/cache/zypper
-ARG INSTALL_ROOT
+# Install dependencies
+RUN apt-get update && \
+    apt-get install -y git bash util-linux bsdmainutils dnsutils bind9-host && \
+    rm -rf /var/lib/apt/lists/*
 
+# Clone the testssl.sh repository
+RUN git clone https://github.com/testssl/testssl.sh.git /opt/testssl.sh
 
-# /etc/os-release provides $VERSION_ID below.
-# We don't need the openh264.repo and the non-oss repos, just costs build time (repo caches).
-# Also we need to remove the util_linux RPM to /really/ make sure busybox-util-linux gets installed.
-# And we need to run zypper update, see all PR #2424.
-RUN source /etc/os-release \
-  && rm -f /etc/zypp/repos.d/repo-openh264.repo /etc/zypp/repos.d/repo-non-oss.repo \
-  && export ZYPPER_OPTIONS=( --releasever "${VERSION_ID}" --installroot "${INSTALL_ROOT}" --cache-dir "${CACHE_ZYPPER}" ) \
-  && zypper "${ZYPPER_OPTIONS[@]}" --gpg-auto-import-keys refresh \
-  && rpm -e util-linux --nodeps \
-  && zypper "${ZYPPER_OPTIONS[@]}" --non-interactive install --download-in-advance --no-recommends \
-       bash procps grep gawk sed coreutils busybox-util-linux busybox-vi ldns libidn2-0 socat openssl curl \
-  && zypper up -y \
-  && zypper "${ZYPPER_OPTIONS[@]}" clean --all
-## Cleanup (reclaim approx 13 MiB):
-# None of this content should be relevant to the container:
-RUN  rm -r "${INSTALL_ROOT}/usr/share/"{licenses,man,locale,doc,help,info}
-# Functionality that the container doesn't need:
-RUN  rm    "${INSTALL_ROOT}/usr/share/misc/termcap" \
-  && rm -r "${INSTALL_ROOT}/usr/lib/sysimage/rpm"
+# Set the working directory
+WORKDIR /opt/testssl.sh
 
+# Make testssl.sh executable
+RUN chmod +x testssl.sh
 
-# Create a new image with the contents of $INSTALL_ROOT
-FROM scratch
-ARG INSTALL_ROOT
-COPY --link --from=builder ${INSTALL_ROOT} /
-# Link busybox to tar, see #2403. Create user + (home with SGID set):
-RUN  ln -s /usr/bin/busybox /usr/bin/tar \
-  && echo 'testssl:x:1000:1000::/home/testssl:/bin/bash' >> /etc/passwd \
-  && echo 'testssl:x:1000:' >> /etc/group \
-  && echo 'testssl:!::0:::::' >> /etc/shadow \
-  && install --mode 2755 --owner testssl --group testssl --directory /home/testssl \
-  && ln -s /home/testssl/testssl.sh /usr/local/bin/
-
-# Copy over build context (after filtered by .dockerignore): bin/ etc/ testssl.sh
-COPY --chown=testssl:testssl . /home/testssl/
-# Copy the entrypoint script into the container
-COPY --chown=testssl:testssl ./entrypoint.sh /home/testssl/
-
-# Ensure the script is executable
-RUN chmod +x /home/testssl/entrypoint.sh
+# Clean unnecessary files to reduce image size
+RUN rm -rf /var/lib/apt/lists/* \
+    /usr/share/doc \
+    /usr/share/man \
+    /usr/share/locale
 
 # Set up a directory inside the container for output files
-RUN mkdir -p /home/testssl/results \
-  && chown -R testssl:testssl /home/testssl/results
+RUN mkdir -p /opt/testssl.sh/results && \
+    chown -R testssl:testssl /opt/testssl.sh
 
+# Copy the entrypoint script into the container
+COPY entrypoint.sh /opt/testssl.sh/entrypoint.sh
+RUN chmod +x /opt/testssl.sh/entrypoint.sh
+
+# Switch to non-root user
 USER testssl
 
 # Use the custom script as the entry point
-ENTRYPOINT ["/home/testssl/entrypoint.sh"]
+ENTRYPOINT ["bash", "/opt/testssl.sh/entrypoint.sh"]
+
+# # Set the entrypoint to testssl.sh
+# ENTRYPOINT ["bash", "./testssl.sh"]
+# CMD ["-h"]

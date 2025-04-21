@@ -7,7 +7,7 @@
 {% block content %}
 <div class="col-md-12">
     <h2>Results for URL: {{ instance.url }}</h2>
-    <p>Submitted on: {{ instance.date }}</p>
+    <!-- <p>Submitted on: {{ instance.date }}</p> -->
     <!-- <table class="table table-bordered">
         <thead>
             <tr>
@@ -64,6 +64,6 @@
         </table>
     </div>
 
-    <a href="{% url 'home' %}" class="btn btn-primary">Go Back</a>
+    <a href="{% url 'home' %}" class="btn btn-primary">Back</a>
 </div>
 {% endblock %}

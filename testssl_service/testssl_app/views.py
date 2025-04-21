@@ -10,7 +10,7 @@ from .models import URLItem, TestsslScan
 def homepage(request):
 
     if request.method == "POST":
-        form = TestsslForm(request.POST)
+        form = URLForm(request.POST)
         if form.is_valid():
             
             url = form.cleaned_data['url']
@@ -90,7 +90,7 @@ def homepage(request):
                 print(f"Error running Docker command and saving results: {str(e)}")
             
             return redirect('results', instance_id=form_instance.id)
-    form = TestsslForm()
+    form = URLForm()
 
     page = {
         "forms": form,
@@ -101,19 +101,19 @@ def homepage(request):
 
 def results(request, instance_id):
     try:
-        instance = TestsslScan.objects.get(id=instance_id)
+        instance = URLItem.objects.get(id=instance_id)
         page = {
             "title": "testssl results",
             "instance": instance,
         }
         return render(request, 'testssl_app/results.html', page)
-    except TestsslScan.DoesNotExist:
+    except URLItem.DoesNotExist:
         return render(request, 'testssl_app/error.html', {"message": "Results not found"})
 
 
 def history(request):
 
-    url_list = TestsslScan.objects.order_by("-date")
+    url_list = URLItem.objects.order_by("-date")
 
 
     page = {
